@@ -1,5 +1,8 @@
 # Opgine - the functional option engine
-Opgine (pronounced like `engine`) is a small engine for functional options similar to command line argument parsers
+Opgine (pronounced like `engine`) is a small engine for functional options similar to command line argument parsers.
+If you aren't familiar with or want to refresh on functional options as a pattern:
+- https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis
+- https://github.com/lusis/go-experiments/blob/master/pkg/funcopts/http/README.md (my experiments with functional options)
 
 ## Quickstart
 The general idea is that you would use opgine for any function options that are TRULY optional. A good example is a db query where you might want all results (no predicate) or filtered results (n predicates). Take the following example:
