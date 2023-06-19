@@ -80,6 +80,16 @@ These two options are mutually exclusive and require at least one other option t
 - `chan`,`func` via `opgine.WithInterface()` for now
 - slices of any `int/uint`,`intX/uintX`, `string`, `float32`,`float64`
 
+## Errors
+
+- `ErrAlreadySet`
+- `ErrInvalidKey`
+- `ErrEmptyValue`
+- `ErrNotSet`
+- `ErrMismatchedTypes`
+- `ErrConflict`
+- `ErrAtLeastOne`
+
 ## Creating your own options
 This is optional (hah!) but you MIGHT want to wrap your `opgine.Option` in your own type for flexibility and slightly more clean code on your side. You can do something like:
 
